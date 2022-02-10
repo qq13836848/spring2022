@@ -1,2 +1,4 @@
 # todo list
-## 1 spring + mybatis crud
+## 2月
+    mybatis annotation
+    mybatis xml

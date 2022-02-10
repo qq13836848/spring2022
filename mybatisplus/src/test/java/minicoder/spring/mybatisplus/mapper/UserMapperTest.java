@@ -1,7 +1,8 @@
-package minicoder.spring.mybatisxml.mapper;
+package minicoder.spring.mybatisplus.mapper;
 
-import minicoder.spring.mybatisxml.entity.User;
-import minicoder.spring.mybatisxml.enums.UserSexEnum;
+import com.baomidou.mybatisplus.test.autoconfigure.MybatisPlusTest;
+import minicoder.spring.mybatisplus.entity.User;
+import minicoder.spring.mybatisplus.enums.UserSexEnum;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,8 +14,6 @@ import java.util.List;
  * @date 2022年02月09日 16:40
  */
 @SpringBootTest
-//@MybatisTest
-//@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 public class UserMapperTest {
 
     @Autowired(required = false)
@@ -27,17 +26,17 @@ public class UserMapperTest {
 
     @Test
     public void testQuery() {
-        List<User> users = userMapper.getAll();
-        System.out.println(users.toString());
+        List<User> user = userMapper.selectList(null);
+        System.out.println(user);
     }
 
     @Test
     public void testUpdate() {
-        User user = userMapper.getOne(30l);
-        System.out.println(user);
-        user.setNickName("jackyxml");
-        userMapper.update(user);
-        System.out.println(user);
+//        User user = userMapper.getOne(30l);
+//        System.out.println(user);
+//        user.setNickName("jackyxml");
+//        userMapper.update(user);
+//        System.out.println(user);
 
     }
 }
