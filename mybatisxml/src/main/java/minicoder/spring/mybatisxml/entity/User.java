@@ -1,10 +1,10 @@
-package minicoder.spring.mybatis.entity;
+package minicoder.spring.mybatisxml.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import minicoder.spring.mybatis.enums.UserSexEnum;
+import minicoder.spring.mybatisxml.enums.UserSexEnum;
 
 import java.io.Serializable;
 

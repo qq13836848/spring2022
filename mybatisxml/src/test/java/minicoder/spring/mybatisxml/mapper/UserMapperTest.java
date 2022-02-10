@@ -1,7 +1,7 @@
-package minicoder.spring.mybatis.mapper;
+package minicoder.spring.mybatisxml.mapper;
 
-import minicoder.spring.mybatis.entity.User;
-import minicoder.spring.mybatis.enums.UserSexEnum;
+import minicoder.spring.mybatisxml.entity.User;
+import minicoder.spring.mybatisxml.enums.UserSexEnum;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -33,9 +33,9 @@ public class UserMapperTest {
 
     @Test
     public void testUpdate() {
-        User user = userMapper.getOne(33l);
+        User user = userMapper.getOne(30l);
         System.out.println(user);
-        user.setNickName("jacky");
+        user.setNickName("jackyxml");
         userMapper.update(user);
         System.out.println(user);
 
